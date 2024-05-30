@@ -1,0 +1,19 @@
+﻿<Window x:Class="Egzaminas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Egzaminas"
+        mc:Ignorable="d"
+        Title="Password Cracker" Height="350" Width="525">
+    <Grid>
+        <TextBox x:Name="PasswordTextBox" HorizontalAlignment="Left" Height="23" Margin="150,38,0,0" VerticalAlignment="Top" Width="120" BorderBrush="#FF848EAC" Background="#FFF0F0F0" SelectionTextBrush="Black"/>
+        <Button Content="Create Password" HorizontalAlignment="Left" Margin="300,38,0,0" VerticalAlignment="Top" Width="98" Click="CreatePassword_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="150,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" x:Name="HashTextBlock" Foreground="Black"/>
+        <Button Content="Brute Force Crack" HorizontalAlignment="Left" Margin="150,197,0,0" VerticalAlignment="Top" Width="120" Click="BruteForceCrack_Click"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" x:Name="ResultTextBlock" Background="#FFE2E2E2"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" x:Name="TimeTextBlock" Background="#FFE2E2E2"/>
+        <Label Content="How many threads?" HorizontalAlignment="Left" Margin="150,125,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ThreadCountTextBox" HorizontalAlignment="Left" Height="23" Margin="150,0,0,0" VerticalAlignment="Center" Width="120" Text="4"/>
+    </Grid>
+</Window>
